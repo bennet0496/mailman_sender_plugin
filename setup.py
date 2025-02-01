@@ -5,5 +5,6 @@ from setuptools import setup, find_packages
 setup(
     name="mailman_sender_plugin", #Name
     version="1.0", #Version
-    packages = find_packages()  # Automatically find the packages that are recognized in the '__init__.py'.
+    packages = ["mailman_sender_plugin"],
+    package_dir = {"mailman_sender_plugin":"."}
 )
